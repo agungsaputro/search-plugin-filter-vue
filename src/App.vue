@@ -1,28 +1,88 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    <Search v-model="searchQuery" v-on:change="filteredResources" />
+    <FlashMessage :position="'right top'"></FlashMessage>
+    <div class="container mx-auto">
+      <selected-item  :data="selectedItem" v-model="sButton" v-on:click="removeItem"/>
+    </div>
+    <hr />
+    <div class="container mx-auto">
+    <item :data="searchItem" :loading="loading" v-model="fButton" v-on:click="addItem" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import data from './dummy/data.js'
+import Header from './components/Header.vue'
+import Search from './components/Search.vue'
+import Item from './components/Item.vue'
+import SelectedItem from './components/SelectedItem.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Header,
+    Search,
+    Item,
+    SelectedItem
+  },
+  data() {
+    return {
+      loading: "",
+      resources: data,
+      searchItem: [],
+      searchQuery: "",
+      fButton: "",
+      sButton: "",
+      selectedItem: [],
+    };
+  },
+  methods: {
+    addItem: function() {
+      this.selectedItem.push(this.fButton);
+      this.flashMessage.success({
+        title: 'Success Add Item to cart',
+        message: 'Hoorah, your selected item'
+      });
+      this.searchItem = this.searchItem.filter((data) => data.id != this.fButton.id);
+      this.resources = this.resources.filter(
+        (data) => data.id != this.fButton.id
+      );
+  },
+  removeItem: function() {
+      this.resources.push(this.fButton);
+      this.searchItem.push(this.sButton);
+      this.flashMessage.info({
+        title: 'Are you sure ?',
+        message: 'you removed item'
+      });
+      this.selectedItem = this.selectedItem.filter(
+        (data) => data.id != this.sButton.id
+      );
+  },
+  filteredResources: async function() {
+      this.loading = true;
+      if (this.searchQuery.length >= 3) {
+        this.searchItem = [];
+        await this.wait(1000);
+        this.searchItem = this.resources.filter(
+          (data) => data.title.indexOf(this.searchQuery) != -1
+        );
+        this.searchItem = this.searchItem.filter((data) => data);
+      } else {
+        this.searchItem = this.resources;
+      }
+      this.loading = false;
+    },
+    wait: async function(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    },
+  },
+  created() {
+    this.filteredResources();
+  },
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
