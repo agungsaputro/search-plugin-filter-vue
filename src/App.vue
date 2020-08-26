@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <Search v-model="searchQuery" v-on:change="filteredResources" />
+    <Search v-model="search" v-on:change="filteredResources" />
     <FlashMessage :position="'right top'"></FlashMessage>
     <div class="container mx-auto">
       <selected-item  :data="selectedItem" v-model="removeButton" v-on:click="removeItem"/>
@@ -34,7 +34,7 @@ export default {
       loading: "",
       resources: data,
       searchItem: [],
-      searchQuery: "",
+      search: "",
       addButton: "",
       removeButton: "",
       selectedItem: [],
@@ -65,11 +65,11 @@ export default {
   },
   filteredResources: async function() {
       this.loading = true;
-      if (this.searchQuery.length >= 3) {
+      if (this.search.length >= 3) {
         this.searchItem = [];
         await this.wait(1000);
         this.searchItem = this.resources.filter(
-          (data) => data.title.indexOf(this.searchQuery) != -1
+          (data) => data.title.indexOf(this.search) != -1
         );
         this.searchItem = this.searchItem.filter((data) => data);
       } else {

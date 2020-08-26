@@ -6,12 +6,9 @@ Vue.use(FlashMessage);
 
 Vue.config.productionTip = false
 
-Vue.filter('currency', function(value){
-  if(!value) return ""
-  let dot = value.toString().split(".");
-  dot[0] = dot[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
-  return `Rp ${dot.join(".")}`
-})
+Vue.filter('currency',(num) =>
+  new Intl.NumberFormat('id-ID', {style: 'currency', currency:'IDR'}).format(num)
+)
 
 new Vue({
   render: h => h(App),
