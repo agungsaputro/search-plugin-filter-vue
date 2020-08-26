@@ -2,7 +2,7 @@
   <div class="mt-5">
     <h1 class="font-bold">Product</h1>
     <hr />
-    <div>{{ loading ? "mengetik..." : data.length>1 ? "" : "Data tidak ditemukan" }}</div>
+    <!-- <div>{{ loading ? "mengetik..." : data.length>1 ? "" : "Data tidak ditemukan" }}</div> -->
     <div class="selected-item flex flex-wrap">
       <div
         v-for="(list, idx) in data"
