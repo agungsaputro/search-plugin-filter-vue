@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
+import store from './store/store'
 import '@/assets/styles/main.css'
 import FlashMessage from '@smartweb/vue-flash-message';
 Vue.use(FlashMessage);
@@ -11,5 +13,7 @@ Vue.filter('currency',(num) =>
 )
 
 new Vue({
+  router,
+  store,
   render: h => h(App),
 }).$mount('#app')

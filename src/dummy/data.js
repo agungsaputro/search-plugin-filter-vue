@@ -5,7 +5,8 @@ export default [
       title: "accusamus beatae ad facilis cum similique qui sunt",
       url: "https://via.placeholder.com/600/92c952",
       thumbnailUrl: "https://via.placeholder.com/150/92c952",
-      price: 1000
+      price: 1000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -13,7 +14,8 @@ export default [
       title: "reprehenderit est deserunt velit ipsam",
       url: "https://via.placeholder.com/600/771796",
       thumbnailUrl: "https://via.placeholder.com/150/771796",
-      price: 5000
+      price: 5000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -21,7 +23,8 @@ export default [
       title: "officia porro iure quia iusto qui ipsa ut modi",
       url: "https://via.placeholder.com/600/24f355",
       thumbnailUrl: "https://via.placeholder.com/150/24f355",
-      price: 7000
+      price: 7000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -29,7 +32,8 @@ export default [
       title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
       url: "https://via.placeholder.com/600/d32776",
       thumbnailUrl: "https://via.placeholder.com/150/d32776",
-      price: 6000
+      price: 6000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -37,7 +41,8 @@ export default [
       title: "natus nisi omnis corporis facere molestiae rerum in",
       url: "https://via.placeholder.com/600/f66b97",
       thumbnailUrl: "https://via.placeholder.com/150/f66b97",
-      price: 10000
+      price: 10000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -45,7 +50,9 @@ export default [
       title: "accusamus ea aliquid et amet sequi nemo",
       url: "https://via.placeholder.com/600/56a8c2",
       thumbnailUrl: "https://via.placeholder.com/150/56a8c2",
-      price: 13000
+      price: 13000,
+      quantity: 5
+
     },
     {
       albumId: 1,
@@ -53,7 +60,8 @@ export default [
       title: "officia delectus consequatur vero aut veniam explicabo molestias",
       url: "https://via.placeholder.com/600/b0f7cc",
       thumbnailUrl: "https://via.placeholder.com/150/b0f7cc",
-      price: 20000
+      price: 20000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -61,7 +69,8 @@ export default [
       title: "aut porro officiis laborum odit ea laudantium corporis",
       url: "https://via.placeholder.com/600/54176f",
       thumbnailUrl: "https://via.placeholder.com/150/54176f",
-      price: 50000
+      price: 50000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -69,7 +78,8 @@ export default [
       title: "qui eius qui autem sed",
       url: "https://via.placeholder.com/600/51aa97",
       thumbnailUrl: "https://via.placeholder.com/150/51aa97",
-      price: 14500
+      price: 14500,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -77,7 +87,8 @@ export default [
       title: "beatae et provident et ut vel",
       url: "https://via.placeholder.com/600/810b14",
       thumbnailUrl: "https://via.placeholder.com/150/810b14",
-      price: 99000
+      price: 99000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -85,7 +96,8 @@ export default [
       title: "nihil at amet non hic quia qui",
       url: "https://via.placeholder.com/600/1ee8a4",
       thumbnailUrl: "https://via.placeholder.com/150/1ee8a4",
-      price: 87000
+      price: 87000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -94,7 +106,8 @@ export default [
         "mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores",
       url: "https://via.placeholder.com/600/66b7d2",
       thumbnailUrl: "https://via.placeholder.com/150/66b7d2",
-      price: 60000
+      price: 60000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -102,7 +115,8 @@ export default [
       title: "repudiandae iusto deleniti rerum",
       url: "https://via.placeholder.com/600/197d29",
       thumbnailUrl: "https://via.placeholder.com/150/197d29",
-      price: 38000
+      price: 38000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -110,7 +124,8 @@ export default [
       title: "est necessitatibus architecto ut laborum",
       url: "https://via.placeholder.com/600/61a65",
       thumbnailUrl: "https://via.placeholder.com/150/61a65",
-      price: 56000
+      price: 56000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -118,7 +133,8 @@ export default [
       title: "harum dicta similique quis dolore earum ex qui",
       url: "https://via.placeholder.com/600/f9cee5",
       thumbnailUrl: "https://via.placeholder.com/150/f9cee5",
-      price: 90000
+      price: 90000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -126,7 +142,8 @@ export default [
       title: "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
       url: "https://via.placeholder.com/600/fdf73e",
       thumbnailUrl: "https://via.placeholder.com/150/fdf73e",
-      price: 69000
+      price: 69000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -134,7 +151,8 @@ export default [
       title: "natus doloribus necessitatibus ipsa",
       url: "https://via.placeholder.com/600/9c184f",
       thumbnailUrl: "https://via.placeholder.com/150/9c184f",
-      price: 12000
+      price: 12000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -142,7 +160,8 @@ export default [
       title: "laboriosam odit nam necessitatibus et illum dolores reiciendis",
       url: "https://via.placeholder.com/600/1fe46f",
       thumbnailUrl: "https://via.placeholder.com/150/1fe46f",
-      price: 24000
+      price: 24000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -150,7 +169,8 @@ export default [
       title: "perferendis nesciunt eveniet et optio a",
       url: "https://via.placeholder.com/600/56acb2",
       thumbnailUrl: "https://via.placeholder.com/150/56acb2",
-      price: 55000
+      price: 55000,
+      quantity: 5
     },
     {
       albumId: 1,
@@ -159,6 +179,7 @@ export default [
         "assumenda voluptatem laboriosam enim consequatur veniam placeat reiciendis error",
       url: "https://via.placeholder.com/600/8985dc",
       thumbnailUrl: "https://via.placeholder.com/150/8985dc",
-      price: 54500
+      price: 54500,
+      quantity: 5
     },
   ];
